@@ -3,10 +3,27 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "start:dev": "npm run build && nodemon dist/index.js",
+  "start:qa": "npm run build && nodemon dist/index.js",
+  "dev": "tsc --watch",
+  "test": "echo 'No tests specified'",
+  "lint": "echo 'No linting configured'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
 }
