@@ -214,3 +214,4 @@ coverage/
 
 #private keys
 talendig-firebase-admin-sdk.json
+firebase-service-account.json
